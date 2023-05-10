@@ -144,10 +144,6 @@ function getRoomColors(c) {
 }
 
 function drawRoom() {
-  
-
-  
-
   left = sideMargin;
   right = width - sideMargin;
   bottom = height - bottomMargin;
@@ -311,11 +307,11 @@ function drawGradientBackground() {
   //   line(0, y, width, y);
   // }
   // background(120, 255, 255);
-  clear();
+  // clear();
 }
 
 function draw() {
-  background(255);
+  // background(255);
 
   // drawScenery();
   drawCloudScene();
