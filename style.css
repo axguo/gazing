@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to left, #a5eff9, #d9c1fa);
+  overflow: hidden;
+}

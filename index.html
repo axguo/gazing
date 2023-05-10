@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floating Text</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .floating-text {
+      position: absolute;
+      color: white;
+      font-size: 24px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const clouds = ["a", "b", "c", "d", "e", "f", "g", "h"];
+
+    function createFloatingText() {
+      const text = document.createElement('div');
+      text.className = 'floating-text';
+      text.innerText = clouds[Math.floor(Math.random() * clouds.length)];
+      text.style.top = Math.random() * (window.innerHeight - 50) + 'px';
+      document.body.appendChild(text);
+
+      const duration = Math.random() * 3000 + 12000;
+      const startTime = performance.now();
+      const textWidth = text.getBoundingClientRect().width;
+      const startPos = window.innerWidth;
+      const endPos = -textWidth;
+
+      function animate(timestamp) {
+        const progress = (timestamp - startTime) / duration;
+        const xPos = startPos + (endPos - startPos) * progress;
+        text.style.transform = `translateX(${xPos}px)`;
+
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        } else {
+          document.body.removeChild(text);
+        }
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    setInterval(createFloatingText, 1000);
+  </script>
+</body>
+</html>
