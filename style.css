@@ -1,25 +1,15 @@
 html, body {
   margin: 0;
   padding: 0;
-}
-canvas {
-  display: block;
-}
-/* body {
-  margin: 0;
-  padding: 0;
-  background: #ddb7a0;
-  overflow: hidden;
-} */
-
-html, body {
   height: 100%;
   background-size: 200% 200%;
   background-image: linear-gradient(to left, #a5eff9, #d9c1fa, #94a0ea, #819aee, #a5eff9);
   animation: gradient 20s ease-in-out infinite;
   overflow: hidden;
 }
-
+canvas {
+  display: block;
+}
 @keyframes gradient {
   0% {background-position: 100% 0%;}
   50% {background-position: 0% 100%;}

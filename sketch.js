@@ -110,8 +110,7 @@ function setup() {
   console.log("original dim", width, height);
   noStroke();
   colorMode(RGB, 255, 255, 255, 1);
-
-  // pixelDensity(1);
+ 
   if (navigator.userAgent.match(/Android/i)
     || navigator.userAgent.match(/webOS/i)
     || navigator.userAgent.match(/iPhone/i)
@@ -148,9 +147,7 @@ function setup() {
   }
 
   msk = createGraphics(width, height);
-  // msk.pixelDensity(1);
   room = createGraphics(width * scaleX, height * scaleY);
-  // room.pixelDensity(2);
   drawRoom();
 
   loaded = true;
