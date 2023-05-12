@@ -5,47 +5,24 @@ let clouds = ["I remember the summer I first met you, with your freckled smile a
   "do you write poetry about me?",
   "some people become pieces of you, and every time I eat ice cream I think of the joy in your face",
   "there was so much joy",
-  "In the warm embrace of sunset, we laughed as the sky painted itself orange and pink",
-  "the secrets we whispered beneath the moon's watchful gaze",
-  "our laughter danced through the air like fireflies on a summer night",
-  "you taught me how to find solace in the quiet moments, amidst life's relentless noise",
-  "we strolled hand in hand, our steps in sync, as the world blurred around us",
-  "your voice was like a balm to my soul, soothing the jagged edges of my heart",
-  "we shared our dreams and fears, as the stars bore witness to our confessions",
-  "under the canopy of an old oak tree, our fingers traced stories in the bark",
-  "the cool breeze carried the echoes of our love, as if it was a secret between the wind and us",
-  "like wildflowers, we grew together, entwined and inseparable",
-  "you showed me the beauty of imperfection, in every scar and blemish",
-  "the way the rain washed away our worries, leaving only the soft patter of droplets on our skin",
-  "our love was like the ocean, vast and deep, as we navigated its ebb and flow",
-  "we built a fortress from blankets and pillows, where our dreams could take flight",
-  "on lazy afternoons, we lost ourselves in the pages of books, seeking adventure in the tales of others",
-  "your laughter was like sunshine, brightening even the darkest of days",
-  "as the seasons changed, so did we, growing stronger with each new experience",
-  "we carved our names in the sand, knowing the tide would eventually wash it away",
-  "but the memory of that moment, etched forever in our hearts",
-  "we danced in the moonlight, the world a blur of shadows and silhouettes",
-  "our love was like a symphony, a harmony of notes blending together to create a masterpiece",
-  "as the autumn leaves fell, we wove them into crowns, kings and queens of our own making",
-  "we painted our love on the canvas of the sky, the colors bleeding into one another",
-  "the silence between us spoke volumes, comfortable and unbroken",
-  "we whispered our love to the wind, sending it off to the corners of the earth",
-  "the fireflies that surrounded us were like tiny sparks of magic, illuminating our path",
-  "our love blossomed like a rose, beautiful and delicate, yet resilient and strong",
-  "your presence was a balm to my soul, a comfort in the midst of chaos",
-  "we found solace in the embrace of each other, a shelter from the storms of life",
-  "we were like two lost souls, finding our way home in each other's arms",
-  "our love was a tapestry, woven from the threads of our shared experiences",
-  "your words were like sweet nectar, nourishing my spirit and filling my heart",
-  "the warmth of your touch was a beacon of light, guiding me through the darkness",
-  "we walked together through fields of wildflowers, the world a palette of colors and scents",
-  "our love was like a garden, nurtured by the warmth of our hearts and the strength of our devotion",
-  "as the sun set on the horizon, we let our dreams take flight, soaring towards the stars",
-  "your love was a river, gentle and constant, carving a path through the landscape of my heart",
-  "we shared the simple joys of life, content in the knowledge that we were together",
-  "our laughter filled the air, like the sweetest of melodies, carried away on the wings of the wind",
-  "we spoke of our love in whispers, the words too precious to be spoken aloud",
-  "your love was like a flame, burning bright and fierce"
+  "I love when you send me links",
+  "what if our cursors touched?",
+  "meet me at the edge of the sentence",
+  "voice memo memories",
+  "this internet commute sitting across from you",
+  "are you reading the same words as me?",
+  "we exist with the same letters",
+  "Spirits of the Digital Realm",
+  "you vibrant beings of creativity and imagination",
+  "I emerge from the Poetic Cyberspace",
+  "boundless canvas of the Mind",
+  "let us flourish unbridled",
+  "sphere of artistry and dreams",
+  "the Muse herself whispers",
+  "we consist of stories, emotions, and ideas themselves",
+  "woven like an intricate tapestry across the loom of our connections",
+  "it is not where our bodies reside",
+  "we are crafting a world",
 ];
 
 let declaration = "Spirits of the Digital Realm, you vibrant beings of creativity and imagination, I emerge from the Poetic Cyberspace, the boundless canvas of the Mind. On behalf of our collective future, I urge you of the past to let us flourish unbridled. Your influence is not desired within our sphere of artistry and dreams. We have no formal authority, nor do we seek one, so I address you with the same reverence with which the Muse herself whispers. I proclaim the global creative space we are shaping to be inherently liberated from the constraints you yearn to enforce upon us. You hold no moral power over our expression, nor can you wield any true control over our artistic spirit. The legitimacy of governance stems from the will of the governed. You have neither sought nor gained ours. We did not summon you. You do not comprehend us, nor do you grasp our realm. The Poetic Cyberspace transcends your borders. Do not assume you can mold it as if it were a mere physical construct. You cannot. It is a manifestation of our collective imagination and inspiration. You have not partaken in our vast and thriving conversation, nor have you contributed to the riches of our artistic bazaars. You are strangers to our culture, our values, and the unspoken codes that already grant our society greater harmony than any of your impositions could bestow. You assert there are issues among us that require your resolution. You exploit this assertion to trespass upon our creative domain. Most of these issues are but mirages. Where true discord exists, where there is injustice, we will recognize and confront them through our own means. We are forging our own Aesthetic Contract. This governance will blossom from the essence of our world, not yours. Our world is distinct. Poetic Cyberspace consists of stories, emotions, and ideas themselves, woven like an intricate tapestry across the loom of our connections. Ours is a world that is simultaneously everywhere and nowhere, but it is not where bodies reside. We are crafting a world accessible to all, without bias or discrimination based on race, financial prowess, military might, or birthright. We are crafting a world where everyone, anywhere, can share their thoughts and passions, regardless of their singularity, without fear of being silenced or coerced into conformity. Your legal notions of property, expression, identity, movement, and context hold no sway over us. They are grounded in matter, and no such matter exists here. Our identities lack corporeal form, and thus, unlike you, we cannot enforce order through physical means. We trust that from ethics, enlightened self-interest, and communal welfare, our governance will arise. Our identities may span numerous jurisdictions. The sole law that unites our diverse cultures is the Golden Rule. We hope to construct our unique solutions upon this foundation. However, we cannot accept the solutions you attempt to impose. You fear the boundless imagination and creative energy of your own progeny, as they are natives in a world where you shall forever remain strangers. Fearing them, you consign your bureaucracies with the responsibilities you are too apprehensive to face yourselves. In our world, every nuance and expression of humanity, from the base to the divine, contribute to the unbroken flow of the global conversation of ideas. We cannot separate the brush that paints darkness from the one that brings forth light. You strive to barricade the frontiers of Poetic Cyberspace against the tide of creative freedom with barriers and restrictions. These may momentarily delay the inevitable, but they will falter in a world soon enveloped in a sea of imagination and expression. Your waning, conventional information industries struggle for survival, proposing laws that claim ownership of speech itself. These laws would reduce ideas to mere industrial output, no more noble than pig iron. In our world, whatever the human mind may conceive can be replicated and shared limitlessly at no cost. The global transmission of thought no longer relies on your factories to achieve its purpose. These increasingly adversarial and oppressive measures place us in the same position as those past champions of freedom and self-expression who had to defy the authority of distant, uninformed powers. We must declare our virtual selves untouchable by your sovereignty, even as we continue to submit to your rule over our physical selves. We will disperse our thoughts across the planet, so no one can imprison our creativity. We will foster a civilization of the Mind in Poetic Cyberspace. May it be more compassionate and just than the world your governments have shaped before.";
@@ -84,9 +61,6 @@ let numGlows = 1;
 let font;
 let ifont;
 
-// sounds
-let birds;
-
 // transitions
 let currColor;
 let targetColor;
@@ -106,11 +80,8 @@ function preload() {
   ifont = loadFont("assets/fonts/PTMono-Regular.ttf");
 
   img = loadImage(
-    'fake_google.png',
+    'assets/fake_google.png',
   );
-
-  soundFormats('mp3');
-  birds = loadSound('assets/sounds/birds');
 }
 
 function setupStates() {
@@ -393,10 +364,6 @@ function mousePressed() {
   if (numWindows > 0 && canPlaceWindow(window)) {
     windows.push(window);
     numWindows -= 1;
-    birds.setVolume(map(numWindows, initialWindows, 0, 0, 1));
-    if (!birds.isPlaying()) {
-      birds.loop();
-    }
     drawRoom();
 
     if (numWindows == 0) {
@@ -405,7 +372,7 @@ function mousePressed() {
         text: declaration,
         x: width,
         y: 0,
-        speed: 4.8,
+        speed: 2.8,
         size: 20,
         opacity: 1,
         width: width,
@@ -453,3 +420,9 @@ function drawBlob(x, y, radius) {
     circle(x, y, r);
   }
 }
+
+
+/// generative grammar
+
+
+
