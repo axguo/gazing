@@ -38,8 +38,8 @@ let room;
 let msk;
 let img;
 let bg;
-let scaleX = 1.5;
-let scaleY = 1.5;
+let scaleX = 2;
+let scaleY = 2;
 
 let imgX = 1344;
 let imgY = 1134;
@@ -112,7 +112,16 @@ function setup() {
   colorMode(RGB, 255, 255, 255, 1);
 
   // pixelDensity(1);
-  console.log("DENSITY", window.devicePixelRatio);
+  if (navigator.userAgent.match(/Android/i)
+    || navigator.userAgent.match(/webOS/i)
+    || navigator.userAgent.match(/iPhone/i)
+    || navigator.userAgent.match(/iPad/i)
+    || navigator.userAgent.match(/iPod/i)
+    || navigator.userAgent.match(/BlackBerry/i)
+    || navigator.userAgent.match(/Windows Phone/i)) {
+      scaleX = 1;
+      scaleY = 1;
+    }
 
   textSize(30);
   textFont(font);
