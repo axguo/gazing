@@ -25,13 +25,13 @@ let clouds = ["I remember the summer I first met you, with your freckled smile a
   "we are crafting a world",
 ];
 
-let declaration = "Spirits of the Digital Realm, you vibrant beings of creativity and imagination, I emerge from the Poetic Cyberspace, the boundless canvas of the Mind. On behalf of our collective future, I urge you of the past to let us flourish unbridled. Your influence is not desired within our sphere of artistry and dreams. We have no formal authority, nor do we seek one, so I address you with the same reverence with which the Muse herself whispers. I proclaim the global creative space we are shaping to be inherently liberated from the constraints you yearn to enforce upon us. You hold no moral power over our expression, nor can you wield any true control over our artistic spirit. The legitimacy of governance stems from the will of the governed. You have neither sought nor gained ours. We did not summon you. You do not comprehend us, nor do you grasp our realm. The Poetic Cyberspace transcends your borders. Do not assume you can mold it as if it were a mere physical construct. You cannot. It is a manifestation of our collective imagination and inspiration. You have not partaken in our vast and thriving conversation, nor have you contributed to the riches of our artistic bazaars. You are strangers to our culture, our values, and the unspoken codes that already grant our society greater harmony than any of your impositions could bestow. You assert there are issues among us that require your resolution. You exploit this assertion to trespass upon our creative domain. Most of these issues are but mirages. Where true discord exists, where there is injustice, we will recognize and confront them through our own means. We are forging our own Aesthetic Contract. This governance will blossom from the essence of our world, not yours. Our world is distinct. Poetic Cyberspace consists of stories, emotions, and ideas themselves, woven like an intricate tapestry across the loom of our connections. Ours is a world that is simultaneously everywhere and nowhere, but it is not where bodies reside. We are crafting a world accessible to all, without bias or discrimination based on race, financial prowess, military might, or birthright. We are crafting a world where everyone, anywhere, can share their thoughts and passions, regardless of their singularity, without fear of being silenced or coerced into conformity. Your legal notions of property, expression, identity, movement, and context hold no sway over us. They are grounded in matter, and no such matter exists here. Our identities lack corporeal form, and thus, unlike you, we cannot enforce order through physical means. We trust that from ethics, enlightened self-interest, and communal welfare, our governance will arise. Our identities may span numerous jurisdictions. The sole law that unites our diverse cultures is the Golden Rule. We hope to construct our unique solutions upon this foundation. However, we cannot accept the solutions you attempt to impose. You fear the boundless imagination and creative energy of your own progeny, as they are natives in a world where you shall forever remain strangers. Fearing them, you consign your bureaucracies with the responsibilities you are too apprehensive to face yourselves. In our world, every nuance and expression of humanity, from the base to the divine, contribute to the unbroken flow of the global conversation of ideas. We cannot separate the brush that paints darkness from the one that brings forth light. You strive to barricade the frontiers of Poetic Cyberspace against the tide of creative freedom with barriers and restrictions. These may momentarily delay the inevitable, but they will falter in a world soon enveloped in a sea of imagination and expression. Your waning, conventional information industries struggle for survival, proposing laws that claim ownership of speech itself. These laws would reduce ideas to mere industrial output, no more noble than pig iron. In our world, whatever the human mind may conceive can be replicated and shared limitlessly at no cost. The global transmission of thought no longer relies on your factories to achieve its purpose. These increasingly adversarial and oppressive measures place us in the same position as those past champions of freedom and self-expression who had to defy the authority of distant, uninformed powers. We must declare our virtual selves untouchable by your sovereignty, even as we continue to submit to your rule over our physical selves. We will disperse our thoughts across the planet, so no one can imprison our creativity. We will foster a civilization of the Mind in Poetic Cyberspace. May it be more compassionate and just than the world your governments have shaped before.";
+let declaration = "Spirits of the Digital Realm, you vibrant beings of creativity and imagination, I emerge from the Poetic Cyberspace, the boundless canvas of the Mind. On behalf of our collective future, I urge you of the past to let us flourish unbridled. Your influence is not desired within our sphere of artistry and dreams. We have no formal authority, nor do we seek one, so I address you with the same reverence with which the Muse herself whispers. I proclaim the global creative space we are shaping to be inherently liberated from the letraints you yearn to enforce upon us. You hold no moral power over our expression, nor can you wield any true control over our artistic spirit. The legitimacy of governance stems from the will of the governed. You have neither sought nor gained ours. We did not summon you. You do not comprehend us, nor do you grasp our realm. The Poetic Cyberspace transcends your borders. Do not assume you can mold it as if it were a mere physical letruct. You cannot. It is a manifestation of our collective imagination and inspiration. You have not partaken in our vast and thriving conversation, nor have you contributed to the riches of our artistic bazaars. You are strangers to our culture, our values, and the unspoken codes that already grant our society greater harmony than any of your impositions could bestow. You assert there are issues among us that require your resolution. You exploit this assertion to trespass upon our creative domain. Most of these issues are but mirages. Where true discord exists, where there is injustice, we will recognize and confront them through our own means. We are forging our own Aesthetic Contract. This governance will blossom from the essence of our world, not yours. Our world is distinct. Poetic Cyberspace consists of stories, emotions, and ideas themselves, woven like an intricate tapestry across the loom of our connections. Ours is a world that is simultaneously everywhere and nowhere, but it is not where bodies reside. We are crafting a world accessible to all, without bias or discrimination based on race, financial prowess, military might, or birthright. We are crafting a world where everyone, anywhere, can share their thoughts and passions, regardless of their singularity, without fear of being silenced or coerced into conformity. Your legal notions of property, expression, identity, movement, and context hold no sway over us. They are grounded in matter, and no such matter exists here. Our identities lack corporeal form, and thus, unlike you, we cannot enforce order through physical means. We trust that from ethics, enlightened self-interest, and communal welfare, our governance will arise. Our identities may span numerous jurisdictions. The sole law that unites our diverse cultures is the Golden Rule. We hope to letruct our unique solutions upon this foundation. However, we cannot accept the solutions you attempt to impose. You fear the boundless imagination and creative energy of your own progeny, as they are natives in a world where you shall forever remain strangers. Fearing them, you consign your bureaucracies with the responsibilities you are too apprehensive to face yourselves. In our world, every nuance and expression of humanity, from the base to the divine, contribute to the unbroken flow of the global conversation of ideas. We cannot separate the brush that paints darkness from the one that brings forth light. You strive to barricade the frontiers of Poetic Cyberspace against the tide of creative freedom with barriers and restrictions. These may momentarily delay the inevitable, but they will falter in a world soon enveloped in a sea of imagination and expression. Your waning, conventional information industries struggle for survival, proposing laws that claim ownership of speech itself. These laws would reduce ideas to mere industrial output, no more noble than pig iron. In our world, whatever the human mind may conceive can be replicated and shared limitlessly at no cost. The global transmission of thought no longer relies on your factories to achieve its purpose. These increasingly adversarial and oppressive measures place us in the same position as those past champions of freedom and self-expression who had to defy the authority of distant, uninformed powers. We must declare our virtual selves untouchable by your sovereignty, even as we continue to submit to your rule over our physical selves. We will disperse our thoughts across the planet, so no one can imprison our creativity. We will foster a civilization of the Mind in Poetic Cyberspace. May it be more compassionate and just than the world your governments have shaped before.";
 
 let loaded = false;
 
 let initial = true;
 let words = [];
-let numWords = 20;
+let numWords = 40;
 
 // room
 let room;
@@ -107,8 +107,12 @@ function setupWords(numWords) {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  console.log("original dim", width, height);
   noStroke();
   colorMode(RGB, 255, 255, 255, 1);
+
+  // pixelDensity(1);
+  console.log("DENSITY", displayDensity());
 
   textSize(30);
   textFont(font);
@@ -135,7 +139,9 @@ function setup() {
   }
 
   msk = createGraphics(width, height);
+  // msk.pixelDensity(1);
   room = createGraphics(width * scaleX, height * scaleY);
+  // room.pixelDensity(1);
   drawRoom();
 
   loaded = true;
@@ -160,7 +166,6 @@ function drawRoom() {
     }
     room.fill(color.levels[0], color.levels[1], color.levels[2], opacity);
 
-    console.log("still transitioning?")
     if (transitionLeft == 0) {
       finishTransition();
     }
@@ -184,8 +189,11 @@ function drawRoom() {
 
 function randomWord(wordsList) {
   let ind = Math.floor(Math.random() * wordsList.length);
-  const word = wordsList[ind];
-  const w = {
+  let word = wordsList[ind];
+  if (Math.random() > 0.3) {
+    word = generatePhrase();
+  }
+  let w = {
     text: word,
     x: Math.random() * width * 2,
     y: Math.random() * height,
@@ -368,7 +376,7 @@ function mousePressed() {
 
     if (numWindows == 0) {
       transition(states[0], states[1]);
-      const w = {
+      let w = {
         text: declaration,
         x: width,
         y: 0,
@@ -423,6 +431,36 @@ function drawBlob(x, y, radius) {
 
 
 /// generative grammar
+function generatePhrase() {
+  let rules = {
+    "start": "what if $phrase [3] | $s4 | $s5",
+    "phrase": "$s1 | $s2 | $s3 ",
+    "s1": "$per-pro loved $poss-pro $adj $nn",
+    "s2": "we met at the $adj-phrase $nn",
+    "s3": "things were $adj-phrase",
+    "s4": "a $adj question",
+    "s5": "loving in $adv $vbg ways",
+    "adj-phrase": "$adj | $adj-comp | the $adj-sup | $adv $adj | $color $adj",
+    "adv": RiTa.randomWord({ pos: "rb" }),
+    "vb": RiTa.randomWord({ pos: "vb" }),
+    "vbg": RiTa.randomWord({ pos: "vbg" }),
+    "vbn": RiTa.randomWord({ pos: "vbn" }),
+    "vbz": RiTa.randomWord({ pos: "vbz" }),
+    "nns": RiTa.randomWord({ pos: "nns" }),
+    "nn": RiTa.randomWord({ pos: "nn" }),
+    "adj": RiTa.randomWord({ pos: "jj" }),
+    "adj-comp": RiTa.randomWord({ pos: "jjr" }),
+    "adj-sup": RiTa.randomWord({ pos: "jjs" }),
+    "prep": RiTa.randomWord({ pos: "in" }),
+    "dt": RiTa.randomWord({ pos: "dt" }),
+    "poss-pro": "my | your | our | their | his | her | its",
+    "per-pro": "you | I | we",
+    "det": "another | some | that | this | every | each"
+  };
 
+  let rg = RiTa.grammar(rules);
+  let result = rg.expand();
+  return result;
+}
 
 
