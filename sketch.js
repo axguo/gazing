@@ -426,7 +426,7 @@ function finishTransition() {
 }
 
 function windowResized() {
-  if (windowWidth > width || windowHeight > height) {
+  if (isLoaded() && (windowWidth > width || windowHeight > height)) {
     resizeCanvas(Math.max(windowWidth, width), Math.max(windowHeight, height));
     scaleX = windowWidth / width;
     scaleY = windowHeight / height;
