@@ -31,15 +31,15 @@ let loaded = false;
 
 let initial = true;
 let words = [];
-let numWords = 40;
+let numWords = 55;
 
 // room
 let room;
 let msk;
 let img;
 let bg;
-let scaleX = 1;
-let scaleY = 1;
+let scaleX = 1.5;
+let scaleY = 1.5;
 
 let imgX = 1344;
 let imgY = 1134;
@@ -112,7 +112,7 @@ function setup() {
   colorMode(RGB, 255, 255, 255, 1);
 
   // pixelDensity(1);
-  console.log("DENSITY", displayDensity());
+  console.log("DENSITY", window.devicePixelRatio);
 
   textSize(30);
   textFont(font);
@@ -129,8 +129,8 @@ function setup() {
   bg = state.bg;
 
   if (width < 600) {
-    imgFactor *= width / 1000;
-    ww = map(width, 300, 600, 70, 110);
+    imgFactor *= width / 800;
+    ww = map(width, 300, 600, 90, 130);
     wh = ww * 1.3;
     textSize(15);
   }
