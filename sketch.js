@@ -38,8 +38,8 @@ let room;
 let msk;
 let img;
 let bg;
-let scaleX = 2;
-let scaleY = 2;
+let scaleX = 1.5;
+let scaleY = 1.5;
 
 let imgX = 1344;
 let imgY = 1134;
@@ -141,7 +141,7 @@ function setup() {
   msk = createGraphics(width, height);
   // msk.pixelDensity(1);
   room = createGraphics(width * scaleX, height * scaleY);
-  // room.pixelDensity(1);
+  // room.pixelDensity(2);
   drawRoom();
 
   loaded = true;
@@ -440,7 +440,7 @@ function generatePhrase() {
     "s3": "things were $adj-phrase",
     "s4": "a $adj question",
     "s5": "loving in $adv $vbg ways",
-    "adj-phrase": "$adj | $adj-comp | the $adj-sup | $adv $adj | $color $adj",
+    "adj-phrase": "$adj | $adj-comp | the $adj-sup | $adv $adj",
     "adv": RiTa.randomWord({ pos: "rb" }),
     "vb": RiTa.randomWord({ pos: "vb" }),
     "vbg": RiTa.randomWord({ pos: "vbg" }),
