@@ -48,23 +48,32 @@ let clouds = ["I remember the summer I first met you, with your freckled smile a
   "your love was like a flame, burning bright and fierce"
 ];
 
+let declaration = "Spirits of the Digital Realm, you vibrant beings of creativity and imagination, I emerge from the Poetic Cyberspace, the boundless canvas of the Mind. On behalf of our collective future, I urge you of the past to let us flourish unbridled. Your influence is not desired within our sphere of artistry and dreams. We have no formal authority, nor do we seek one, so I address you with the same reverence with which the Muse herself whispers. I proclaim the global creative space we are shaping to be inherently liberated from the constraints you yearn to enforce upon us. You hold no moral power over our expression, nor can you wield any true control over our artistic spirit. The legitimacy of governance stems from the will of the governed. You have neither sought nor gained ours. We did not summon you. You do not comprehend us, nor do you grasp our realm. The Poetic Cyberspace transcends your borders. Do not assume you can mold it as if it were a mere physical construct. You cannot. It is a manifestation of our collective imagination and inspiration. You have not partaken in our vast and thriving conversation, nor have you contributed to the riches of our artistic bazaars. You are strangers to our culture, our values, and the unspoken codes that already grant our society greater harmony than any of your impositions could bestow. You assert there are issues among us that require your resolution. You exploit this assertion to trespass upon our creative domain. Most of these issues are but mirages. Where true discord exists, where there is injustice, we will recognize and confront them through our own means. We are forging our own Aesthetic Contract. This governance will blossom from the essence of our world, not yours. Our world is distinct. Poetic Cyberspace consists of stories, emotions, and ideas themselves, woven like an intricate tapestry across the loom of our connections. Ours is a world that is simultaneously everywhere and nowhere, but it is not where bodies reside. We are crafting a world accessible to all, without bias or discrimination based on race, financial prowess, military might, or birthright. We are crafting a world where everyone, anywhere, can share their thoughts and passions, regardless of their singularity, without fear of being silenced or coerced into conformity. Your legal notions of property, expression, identity, movement, and context hold no sway over us. They are grounded in matter, and no such matter exists here. Our identities lack corporeal form, and thus, unlike you, we cannot enforce order through physical means. We trust that from ethics, enlightened self-interest, and communal welfare, our governance will arise. Our identities may span numerous jurisdictions. The sole law that unites our diverse cultures is the Golden Rule. We hope to construct our unique solutions upon this foundation. However, we cannot accept the solutions you attempt to impose. You fear the boundless imagination and creative energy of your own progeny, as they are natives in a world where you shall forever remain strangers. Fearing them, you consign your bureaucracies with the responsibilities you are too apprehensive to face yourselves. In our world, every nuance and expression of humanity, from the base to the divine, contribute to the unbroken flow of the global conversation of ideas. We cannot separate the brush that paints darkness from the one that brings forth light. You strive to barricade the frontiers of Poetic Cyberspace against the tide of creative freedom with barriers and restrictions. These may momentarily delay the inevitable, but they will falter in a world soon enveloped in a sea of imagination and expression. Your waning, conventional information industries struggle for survival, proposing laws that claim ownership of speech itself. These laws would reduce ideas to mere industrial output, no more noble than pig iron. In our world, whatever the human mind may conceive can be replicated and shared limitlessly at no cost. The global transmission of thought no longer relies on your factories to achieve its purpose. These increasingly adversarial and oppressive measures place us in the same position as those past champions of freedom and self-expression who had to defy the authority of distant, uninformed powers. We must declare our virtual selves untouchable by your sovereignty, even as we continue to submit to your rule over our physical selves. We will disperse our thoughts across the planet, so no one can imprison our creativity. We will foster a civilization of the Mind in Poetic Cyberspace. May it be more compassionate and just than the world your governments have shaped before.";
+
 
 let initial = true;
 let words = [];
-let numWords = 50;
+let numWords = 20;
 
 // room
 let room;
 let msk;
 let img;
 let bg;
+let scaleX = 2;
+let scaleY = 2;
+
+let imgX = 1344;
+let imgY = 1134;
+let imgFactor = 0.5;
+
 
 // windows
 let numWindows;
 let initialWindows = 7;
 let windows = [];
-let ww = 200;
-let wh = 230;
+let ww = 170;
+let wh = 200;
 let overlapping = false;
 let borderWeight = 5;
 let crossWeight = 3;
@@ -85,9 +94,11 @@ let nextState;
 
 let states = [];
 
-let transitionTime = 50;
+let transitionTime = 30;
 let transitionLeft;
 let inTransition = false;
+
+let d;
 
 function preload() {
   font = loadFont("assets/fonts/EBGaramond-Regular.ttf");
@@ -109,7 +120,7 @@ function setupStates() {
 
   let declarationState = {
     name: "declaration",
-    bg: color(38, 38, 38)
+    bg: color(4, 9, 51)
   }
 
   states = [cloudState, declarationState];
@@ -135,27 +146,34 @@ function setup() {
   setupWords(numWords);
 
   numWindows = initialWindows;
-  
+
 
   setupStates();
-
   state = states[0];
-
-  console.log(state)
-
   bg = state.bg;
 
-  // console.log(bg);
+  if (width < 400) {
+    imgFactor *= width / 1000;
+    ww = 70;
+    wh = 90;
+  }
+  else {
+    imgFactor *= width / 1300;
+  }
+
+  msk = createGraphics(width, height);
+  room = createGraphics(width * scaleX, height * scaleY);
   drawRoom();
 }
 
 function drawRoom() {
-  room = createGraphics(width, height);
   room.pixelDensity(pixelDensity());
   room.colorMode(RGB, 255, 255, 255, 1);
 
   if (initial) {
-    room.image(img, 0, 0, width, height);
+    room.background(255);
+    room.imageMode(CENTER)
+    room.image(img, width * scaleX / 2, height * scaleX / 2, imgX * scaleX * imgFactor, imgY * scaleY * imgFactor);
   }
 
   if (inTransition) {
@@ -177,15 +195,16 @@ function drawRoom() {
     } else {
       room.fill(bg.levels[0], bg.levels[1], bg.levels[2], 1);
     }
-    
+
   }
-  room.rect(0, 0, width, height);
+  room.rect(0, 0, width * 2, height * 2);
 
   for (let i = 0; i < windows.length; i++) {
     let w = windows[i];
     w.glow = false;
     w.glowsLeft = numGlows;
   }
+
 }
 
 function randomWord(wordsList) {
@@ -198,7 +217,8 @@ function randomWord(wordsList) {
     speed: Math.random() + 1,
     size: Math.floor(Math.random() * 16) + 15,
     opacity: Math.random(),
-    width: Math.floor(Math.random() * 100) + 150
+    width: Math.floor(Math.random() * 100) + 150,
+    draw: true
   };
 
   return w;
@@ -223,7 +243,6 @@ function canPlaceWindow(newWindow) {
 
 function drawWindows() {
   //punch a hole in the shapes
-  msk = createGraphics(width, height);
   msk.background(0);
   msk.erase();
   msk.noStroke();
@@ -268,48 +287,25 @@ function drawWindow(w) {
   if (!w.glow && !w.done) {
     room.fill(255);
     room.noStroke();
-    // room.noFill();
-    // room.stroke(255);
-    // room.strokeWeight(4);
-
     room.drawingContext.shadowBlur = 70;
     room.drawingContext.shadowColor = color(255, 255, 255);
-    room.rect(w.x, w.y, w.w, w.h);
+    room.rect(w.x * scaleX, w.y * scaleY, w.w * scaleX, w.h * scaleY);
     w.glowsLeft -= 1;
     if (w.glowsLeft == 0) {
       w.glow = true;
       w.done = true;
     }
 
-    // noFill();
-    // stroke(255);
-    // strokeWeight(3);
-    // drawingContext.shadowBlur = 10;
-    // drawingContext.shadowColor = color(255, 255, 255);
-    // rect(w.x - 2, w.y - 2, w.w + 4, w.h + 4);
-    // drawingContext.shadowBlur = 0;
-
   }
 
   if (w.done && w.glowsLeft > 0) {
     for (let i = 0; i < w.glowsLeft; i++) {
       room.fill(255);
-      // room.noFill();
       room.stroke(255);
-      // room.strokeWeight(4);
       room.noStroke();
-
       room.drawingContext.shadowBlur = 70;
       room.drawingContext.shadowColor = color(255, 255, 255);
-      room.rect(w.x, w.y, w.w, w.h);
-
-      // noFill();
-      // stroke(255);
-      // strokeWeight(3);
-      // drawingContext.shadowBlur = 10;
-      // drawingContext.shadowColor = color(255, 255, 255);
-      // rect(w.x - 2, w.y - 2, w.w + 4, w.h + 4);
-      // drawingContext.shadowBlur = 0;
+      room.rect(w.x * scaleX, w.y * scaleY, w.w * scaleX, w.h * scaleY);
     }
     w.glowsLeft = 0;
     w.glow = true;
@@ -337,12 +333,24 @@ function drawCloudScene() {
 
 }
 
+
 function drawScene() {
-  if (inTransition) {
-    console.log("transitioning!");
-  } else if (state.name == "cloud") {
-    drawCloudScene();
+  drawCloudScene();
+
+  // declaration
+  let w = d;
+  if (w && w.draw) {
+    w.x -= w.speed;
+    textFont(ifont);
+    fill(255, 255, 255, w.opacity);
+    textSize(w.size);
+    text(w.text, w.x, w.y, w.width);
+    if (w.x + w.width < 0) {
+      w.draw = false;
+    }
+    textFont(font);
   }
+
 }
 
 function draw() {
@@ -350,25 +358,21 @@ function draw() {
 
   if (inTransition) {
     drawRoom();
-    console.log("are we drawing")
   }
-
-////////////////////////////////////
-// do i need to draw windows every time now that they're done?
-////////////////////////////////
 
   //draw on external canvas
   drawWindows();
 
 
-  roomImage = room.get();
-  // cut out window mask
-  let mskImage = msk.get();
-  roomImage.mask(mskImage);
-  // draw room overlay
-  image(roomImage, 0, 0);
-  // image(img, 0, 0, width, height)
+  if (numWindows > 0 || inTransition) {
+    roomImage = room.get();
+    // cut out window mask
+    let mskImage = msk.get();
+    roomImage.mask(mskImage);
+  }
 
+  // draw room overlay
+  image(roomImage, 0, 0, width, height);
 }
 
 function mousePressed() {
@@ -383,10 +387,6 @@ function mousePressed() {
   };
 
   if (numWindows > 0 && canPlaceWindow(window)) {
-    // if (numWindows %2 == 0) {
-    //   numGlows += 1;
-    // }
-
     windows.push(window);
     numWindows -= 1;
     birds.setVolume(map(numWindows, initialWindows, 0, 0, 1));
@@ -396,21 +396,25 @@ function mousePressed() {
     drawRoom();
 
     if (numWindows == 0) {
-      fadeGoogle();
       transition(states[0], states[1]);
+      const w = {
+        text: declaration,
+        x: width,
+        y: 0,
+        speed: 4.8,
+        size: 20,
+        opacity: 1,
+        width: width,
+        draw: true
+      };
+      d = w;
     }
   }
 }
 
-function fadeGoogle() {
-
-}
-
 function transition(from, to) {
-  console.log("TRANSITIONING");
   currColor = from.bg;
   targetColor = to.bg;
-
   transitionLeft = transitionTime;
   inTransition = true;
 }
@@ -418,12 +422,16 @@ function transition(from, to) {
 function finishTransition() {
   bg = targetColor;
   inTransition = false;
-  intial = false;
+  initial = false;
 }
 
 function windowResized() {
   if (windowWidth > width || windowHeight > height) {
     resizeCanvas(Math.max(windowWidth, width), Math.max(windowHeight, height));
+    scaleX = windowWidth / width;
+    scaleY = windowHeight / height;
+    msk = createGraphics(width, height);
+    room = createGraphics(width * scaleX, height * scaleY);
     drawRoom();
   }
 }
@@ -441,4 +449,3 @@ function drawBlob(x, y, radius) {
     circle(x, y, r);
   }
 }
-
