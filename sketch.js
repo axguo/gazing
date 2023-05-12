@@ -155,8 +155,9 @@ function setup() {
 
   if (width < 600) {
     imgFactor *= width / 1000;
-    ww = 70;
-    wh = 90;
+    ww = map(width, 300, 600, 70, 110);
+    wh = ww * 1.3;
+    textSize(15);
   }
   else {
     imgFactor *= width / 1300;
