@@ -38,8 +38,8 @@ let room;
 let msk;
 let img;
 let bg;
-let scaleX = 1.5;
-let scaleY = 1.5;
+let scaleX = 1;
+let scaleY = 1;
 
 let imgX = 1344;
 let imgY = 1134;
