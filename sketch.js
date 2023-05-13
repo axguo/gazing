@@ -172,8 +172,8 @@ let bg;
 let scaleX = 2;
 let scaleY = 2;
 
-let imgX = 1344;
-let imgY = 1134;
+let imgX = 1578;
+let imgY = 494;
 let imgFactor = 0.5;
 
 
@@ -211,7 +211,7 @@ function preload() {
   ifont = loadFont("assets/fonts/PTMono-Regular.ttf");
 
   img = loadImage(
-    'assets/fake_google.png',
+    'assets/google.png',
   );
 }
 
@@ -237,6 +237,8 @@ function setupWords(numWords) {
 }
 
 function setup() {
+  document.getElementById("overlay").classList.remove("overlay");
+
   createCanvas(windowWidth, windowHeight);
   noStroke();
   colorMode(RGB, 255, 255, 255, 1);
@@ -273,7 +275,7 @@ function setup() {
     textSize(15);
   }
   else {
-    imgFactor *= width / 1300;
+    imgFactor *= width / 1500;
   }
 
   msk = createGraphics(width, height);
