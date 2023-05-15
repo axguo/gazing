@@ -441,9 +441,14 @@ function drawCloudScene() {
     textSize(w.size);
     text(w.text, w.x, w.y, w.width);
     if (w.x + w.width < 0) {
-      w = randomWord(clouds);
-      w.x = width + random() * width;
-      w.x = 500;
+      let randoW= randomWord(clouds);
+      w.text = randoW.text,
+      w.y = randoW.y,
+      w.speed = randoW.speed,
+      w.size = randoW.size,
+      w.opacity = randoW.opacity,
+      w.width = randoW.width
+      w.x = width + random() * 300;
     }
   }
 
